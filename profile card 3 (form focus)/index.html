@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html land="end">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewpoint" content="width=device-width, intial-scale= 1.0" />
+        <title>Form Profile Card</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="card">
+            <img src="logo.png" alt="" class="card-photo">
+            <h1>Welcome to Koinonia Christian Center</h1>
+            <p>We're excited you're here. Please fill out the form below to let us know more about you and how we can help you get connected, grow in faith, and feel at home in our community!</p>
+
+            <form action="/submit-form" method="POST"> <!--element wraps all your input fields-->
+            <!--action is where the form sends data "url script"-->
+            <!--method is how the data is sent (POST for sensitive data and GET for url based)-->
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address</label>
+            <!--label tell the user what the input is for; always connected to "input" and "for"-->
+            <!--"for" connects to "id"-->
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            <!--"input" is where the user types or selects information
+            text: single line text
+            email: email address
+            tel: phone
+            password
+            checkbox: multiple options
+            radio: yes or no
+            submit -->
+
+            <label for="address">Home Address</label>
+            <input type="text" id="address" name="address">
+            <label for="interest">Intrested In</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="serve" name="interest" value="Serve">Serving
+                <input type="checkbox" id="outreach" name="interest" value="Out-reach">Outreach
+                <input type="checkbox" id="ministry" name="interest" value="Ministry">Ministry
+            </div>    
+            </form>
+            
+            <button type="submit">Join Us</button>
+            <button type="reset">Clear</button>
+            
+        </div>
+
+    </body>
+</html>
