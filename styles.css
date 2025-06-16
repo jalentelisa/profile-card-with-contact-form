@@ -1,0 +1,108 @@
+body{
+    margin: 0; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 200vh; 
+
+}
+
+.card{
+    background-color: white;
+    padding: 2rem; 
+    border-radius: 15px; 
+    text-align: center; 
+    box-shadow: 0 4px 12px rgba(0,0,grey);
+    max-width: 450px;
+
+}
+
+.card-photo{
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 0.5%;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 24px;
+    color: black; 
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 16px;
+    color:black;
+    margin-bottom: 1rem;
+    
+}
+
+/* FORM STYLING (COMMON) */
+
+form{
+    /* Use consistent spacing and align everything vertically with flex or grid. */
+    max-width: 500px;
+    margin: 2rem auto; 
+    padding: 1rem; 
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,grey);
+    margin-bottom: 1rem; 
+}
+
+/* label styling (the name above the text area) */
+label{
+    display: block; 
+    margin-bottom: 1rem; 
+    font-weight: bold;
+    color: #444; 
+}
+
+/* input type area styling */
+input, textarea {
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem; 
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; 
+}
+
+/* checkbox styling ; wrap the group in a <div> and assign a class name for direct styling that differs from form inputs */
+
+.checkbox-group{
+    display: flex; 
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-group label{
+    font-weight: normal;
+}
+
+/* Submit button styling; "type=submit" is the attribute are the only attributes that will be styled*/
+button[type="submit"] {
+    background-color: #ccc; 
+    color: black; 
+    padding: 1rem 1.5rem; 
+    border: none; 
+    border-radius: 15%;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+button[type="reset"]{
+    background-color: #444;
+    color: white; 
+    padding: 1rem 1.5rem; 
+    border: 5px; 
+    border-radius: 15%;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
